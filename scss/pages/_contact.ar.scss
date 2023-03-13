@@ -1,0 +1,74 @@
+@import "contact";
+.ar {
+  .contact-page {
+    .contact-form {
+      .contact-img {
+        left: 0 !important;
+      }
+      .form-wrapper {
+        .filed-item {
+          .alert {
+            .btn-close {
+              float: left;
+            }
+          }
+        }
+      }
+    }
+    .stay-in-touch {
+      .stay-img {
+        position: absolute;
+        left: 0;
+        top: -159px;
+        z-index: -1;
+      }
+      .statistics-items {
+        .content-stay {
+          padding-bottom: 80px;
+          .statistics-card {
+            cursor: pointer;
+            .icon {
+              margin: 0 auto;
+            }
+            .wrapper {
+              .hover {
+                left: 0;
+                top: 0;
+              }
+            }
+
+            &:hover {
+              i {
+                transform: scale(2);
+                transition: transform 2s ease-out;
+              }
+              &:hover .hover {
+                width: 100%;
+                animation: stagger 2s steps(14);
+              }
+            }
+            @keyframes stagger {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+            }
+          }
+
+          .card-effects {
+            &:before {
+              
+              right: -82px;
+              left: -102px !important;
+          
+            }
+
+            
+          }
+        }
+      }
+    }
+  }
+}
